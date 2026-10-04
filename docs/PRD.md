@@ -83,6 +83,7 @@ Obsidianでは添付ファイルの保存先が既定でvaultルートなので�
 
 - TypeScript + esbuild（Obsidian公式 sample plugin の構成に準拠）
 - テスト: vitest（振り分けロジックのみ）
+- minAppVersion 1.6.0（`Modal.setTitle` と `Vault.getFileByPath` を使うため）
 - 対象: Obsidianデスクトップ版（モバイルでも動くようにはするが、検証はデスクトップのみ）
 
 ## リスク

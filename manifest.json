@@ -1,0 +1,9 @@
+{
+  "id": "attachment-tidy",
+  "name": "Attachment Tidy",
+  "version": "0.1.0",
+  "minAppVersion": "1.6.0",
+  "description": "Move attachments next to the notes that use them, and trash unused ones.",
+  "author": "rtr_dnd",
+  "isDesktopOnly": false
+}

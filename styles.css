@@ -1,0 +1,6 @@
+.attachment-tidy-list {
+  max-height: 40vh;
+  overflow-y: auto;
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-small);
+}

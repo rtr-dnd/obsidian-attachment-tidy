@@ -17,4 +17,15 @@ vaultの添付ファイルを、参照しているノートと同じフォルダ
 
 ## 開発コマンド
 
-- TODO: 雛形を作ったら書く（`npm install` / `npm run dev` / `npm run build` / `npm test` の予定）
+- `npm install` — 依存関係を入れる
+- `npm test` — 振り分けロジック（`src/planner.ts`）のユニットテスト（vitest）
+- `npm run build` — 型チェックをしてから `main.js` を出力する
+- `npm run dev` — watchビルド（インラインsourcemap付き）
+- 実機で試す: vaultの `.obsidian/plugins/attachment-tidy/` に `main.js`・`manifest.json`・`styles.css` を置く（またはこのリポジトリをシンボリックリンクする）。
+
+## コード構成
+
+- `src/planner.ts` — 振り分けルール（純粋関数。Obsidian APIに依存しない）。仕様の中心なので、変更するときはテストから
+- `src/main.ts` — プラグイン本体（コマンド、リボン、計画の作成と実行）
+- `src/confirm-modal.ts` — 削除前の確認モーダル
+- `src/settings.ts` — 設定とその画面
